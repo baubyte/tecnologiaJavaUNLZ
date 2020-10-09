@@ -60,6 +60,7 @@ public class Main {
 
         /**Mostramos las Figuras*/
         ListaFigurasGeometricas.mostrar();
+        System.out.println( figuraGeometrica.areaMayorA(new Triangulo(20, 50, 30)));
 
     }
 
