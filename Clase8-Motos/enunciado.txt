@@ -1,0 +1,7 @@
+/*Generar un listado de motos, las cuales puedan ser normales y todo terreno.
+Proporcionar una cantidad de horas y determinar cuantos kilometros recorrería cada
+moto en el tiempo dado. Adicionalmete se debe informar si el camino a recorrer es ruta
+o es otro.
+En caso de no ser ruta, las motos normales sufriran una penalizacion del 45%
+de la velocidad
+La velocidad de las motos, es determinada por su motor.-*/
