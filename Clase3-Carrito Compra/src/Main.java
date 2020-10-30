@@ -1,12 +1,14 @@
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        ListadoArticulos.getInstance().agregar(new Articulos("10","coca","10"));
 
-		/*Se solicita crear un programa el cual tenga empleados de distintas
+        /*Se solicita crear un programa el cual tenga empleados de distintas
 		 * categorias.
 		 * 
 		 * Cada persona va a tener un inventario de articulos.
@@ -15,10 +17,7 @@ public class Main {
 		 * Estos articulos la persona los tendra que comprar
 		 * 
 		 * */
-		
-	
-		
-		Articulo arti = new Articulo("G01", "Pepsi 1L", 200);
+ /*Articulo arti = new Articulo("G01", "Pepsi 1L", 200);
 		
 		ListadoArticulos.agregar(arti);
 		
@@ -72,22 +71,9 @@ public class Main {
 				comprador.mostrarMochila();
 				break;
 
-			} 
-			
-			 
-			 
-			 
-			 
-		 }
+			}
+    }*/
 
-		 
-		
-		 
-		
-		
-		
-		
-
-	}
+}
 
 }

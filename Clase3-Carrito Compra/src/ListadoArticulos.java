@@ -2,18 +2,27 @@ import java.util.HashMap;
 
 public class ListadoArticulos {
 	
-	public static double pi = 3.14;
+    public static ListadoArticulos singleton;
+    public static ListadoArticulos getInstance(){
+        if (singleton == null) {
+            singleton = new ListadoArticulos();
+        }
+        return singleton;
+    }
+    private ListadoArticulos(){
+    }
+	public  double pi = 3.14;
 	
-	public static HashMap<String, Articulo> articulos = new HashMap<String,Articulo>();
+	public  HashMap<String, Articulo> articulos = new HashMap<String,Articulo>();
 
-	public static void mostrar() {
-		for(  Articulo arti : ListadoArticulos.articulos.values()    ) {
+	public  void mostrar() {
+		for(  Articulo arti : this.articulos.values()    ) {
 			arti.mostrar();
 		}
 	}
 	
-	public static void agregar(Articulo art) {
-		ListadoArticulos.articulos.put(art.getCod(),art);
+	public  void agregar(Articulo art) {
+		this.articulos.put(art.getCod(),art);
 	}
 
 }
